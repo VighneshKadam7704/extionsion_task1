@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6dfaf50c7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="portfolio1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu"></i>
+            </ul>
+                 <i class="fas fa-bars" onclick="openmenu"></i>
+        </nav>
+        <div class="header-text">
+
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Vighnesh</span><br>from Pune</h1>
+        </div>
+       </div> 
+    </div>
+    <!------------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="imagedemo4.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure cupiditate, dolor culpa commodi fugiat eum sit! Quibusdam perferendis magnam quia sequi voluptates accusantium totam quidem tenetur eligendi? Sed, delectus odit!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Development </span><br> Making a Website Using HTML/CSS and Java script</li>
+                        <li><span>Project Managment </span><br> Helping in Tasks</li>
+                        <li><span >Problem Solving and Prsentation</span><br> Solving the Problem Statements</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Current </span><br> Web Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2020-22</span><br>Commerce in 12th </li>
+                        <li><span>2022-25 </span><br>BCA from MIT Pune</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-------------------------resume------------------------------>
+   <div id="resume">
+    <div class="container">
+        <h1 class="sub-title">My Resume</h1>
+        <div class="resume-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium magni aut. Enim accusamus fugit dolorem distinctio fugiat sequi id dolores blanditiis quam culpa veniam iste libero, deleniti similique. Veritatis?</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-code-commit"></i>
+            <h2>Project Managment & Problem Solving</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium magni aut. Enim accusamus fugit dolorem distinctio fugiat sequi id dolores blanditiis quam culpa veniam iste libero, deleniti similique. Veritatis?</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2>Report Writing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium magni aut. Enim accusamus fugit dolorem distinctio fugiat sequi id dolores blanditiis quam culpa veniam iste libero, deleniti similique. Veritatis?</p>
+            <a href="#">Learn more</a>
+        </div>
+        </div>
+    </div>
+<!------------------------projects--------------->
+  <div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work2.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt autem exercitationem consequuntur, nesciunt fugiat pariatur ex voluptatibus? A quas enim eum rem quaerat consequuntur iure sequi maxime rerum unde.</p>
+                    <a  href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt autem exercitationem consequuntur, nesciunt fugiat pariatur ex voluptatibus? A quas enim eum rem quaerat consequuntur iure sequi maxime rerum unde.</p>
+                    <a  href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work2.png">
+                <div class="layer">
+                    <h3>Blog Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt autem exercitationem consequuntur, nesciunt fugiat pariatur ex voluptatibus? A quas enim eum rem quaerat consequuntur iure sequi maxime rerum unde.</p>
+                    <a  href="#"><i class="fa-solid fa-link"></i></a>
+                </div>  
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div> 
+  <!-------------------contact------------------------------>
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456788</p>
+                <div class="social-icon">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Vighnesh Kadam Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="E-mail"  required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy;Copyright Made by Vighnesh </p>
+    </div>
+  </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxuIDFKaOVbgf2rUJQ1X3XmhiK9eQJv_E1QtH2aNJZBdLh5Pzq9lZNkkbZP22qBNbCj/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg  = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> 
